@@ -2,7 +2,6 @@
 <keymap version="1" name="Eclipse on Mac" parent="Eclipse">
   <action id="$Copy">
     <keyboard-shortcut first-keystroke="meta C" />
-    <keyboard-shortcut first-keystroke="meta INSERT" />
   </action>
   <action id="$Cut">
     <keyboard-shortcut first-keystroke="meta X" />
@@ -13,10 +12,9 @@
   </action>
   <action id="$Paste">
     <keyboard-shortcut first-keystroke="meta V" />
-    <keyboard-shortcut first-keystroke="shift INSERT" />
   </action>
   <action id="$Redo">
-    <keyboard-shortcut first-keystroke="meta Y" />
+    <keyboard-shortcut first-keystroke="shift meta Z" />
   </action>
   <action id="$SelectAll">
     <keyboard-shortcut first-keystroke="meta A" />
@@ -75,6 +73,12 @@
   <action id="ChangeTypeSignature">
     <keyboard-shortcut first-keystroke="shift meta F6" />
   </action>
+  <action id="ChangesView.Commit">
+    <keyboard-shortcut first-keystroke="shift control F3" />
+  </action>
+  <action id="CheckinFiles">
+    <keyboard-shortcut first-keystroke="shift control 2" />
+  </action>
   <action id="CheckinProject" />
   <action id="ChooseDebugConfiguration">
     <keyboard-shortcut first-keystroke="shift alt F9" />
@@ -99,9 +103,6 @@
   </action>
   <action id="CloseEditor" />
   <action id="CloseWindow" />
-  <action id="CodeCompletion">
-    <keyboard-shortcut first-keystroke="meta SPACE" />
-  </action>
   <action id="CodeInspection.OnEditor" />
   <action id="CollapseAll">
     <keyboard-shortcut first-keystroke="meta SUBTRACT" />
@@ -194,6 +195,9 @@
   <action id="Console.TableResult.CopyQuery">
     <keyboard-shortcut first-keystroke="shift meta alt C" />
   </action>
+  <action id="Console.TableResult.EditValue">
+    <keyboard-shortcut first-keystroke="alt ENTER" />
+  </action>
   <action id="Console.TableResult.NextPage">
     <keyboard-shortcut first-keystroke="meta alt DOWN" />
   </action>
@@ -239,6 +243,9 @@
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="F12" />
     <keyboard-shortcut first-keystroke="shift meta E" />
+  </action>
+  <action id="Editor Redo">
+    <keyboard-shortcut first-keystroke="shift meta Z" />
   </action>
   <action id="EditorBackSpace">
     <keyboard-shortcut first-keystroke="BACK_SPACE" />
@@ -314,15 +321,13 @@
     <keyboard-shortcut first-keystroke="shift LEFT" />
   </action>
   <action id="EditorLineEnd">
-    <keyboard-shortcut first-keystroke="END" />
-    <keyboard-shortcut first-keystroke="control RIGHT" />
+    <keyboard-shortcut first-keystroke="shift control RIGHT" />
   </action>
   <action id="EditorLineEndWithSelection">
     <keyboard-shortcut first-keystroke="shift END" />
   </action>
   <action id="EditorLineStart">
-    <keyboard-shortcut first-keystroke="HOME" />
-    <keyboard-shortcut first-keystroke="control LEFT" />
+    <keyboard-shortcut first-keystroke="shift control LEFT" />
   </action>
   <action id="EditorLineStartWithSelection">
     <keyboard-shortcut first-keystroke="shift HOME" />
@@ -424,12 +429,8 @@
     <keyboard-shortcut first-keystroke="shift meta X" />
     <keyboard-shortcut first-keystroke="shift meta Y" />
   </action>
-  <action id="EditorToggleColumnMode">
-    <keyboard-shortcut first-keystroke="shift alt INSERT" />
-  </action>
-  <action id="EditorToggleInsertState">
-    <keyboard-shortcut first-keystroke="INSERT" />
-  </action>
+  <action id="EditorToggleColumnMode" />
+  <action id="EditorToggleInsertState" />
   <action id="EditorUnSelectWord">
     <keyboard-shortcut first-keystroke="shift alt DOWN" />
   </action>
@@ -468,9 +469,7 @@
   <action id="ExtractMethod">
     <keyboard-shortcut first-keystroke="shift alt M" />
   </action>
-  <action id="Faces.Create.Model.Element">
-    <keyboard-shortcut first-keystroke="alt INSERT" />
-  </action>
+  <action id="Faces.Create.Model.Element" />
   <action id="FileChooser.GotoHome">
     <keyboard-shortcut first-keystroke="meta 1" />
   </action>
@@ -481,7 +480,6 @@
     <keyboard-shortcut first-keystroke="meta 2" />
   </action>
   <action id="FileChooser.NewFolder">
-    <keyboard-shortcut first-keystroke="alt INSERT" />
     <keyboard-shortcut first-keystroke="meta N" />
   </action>
   <action id="FileChooser.TogglePathShowing">
@@ -496,6 +494,7 @@
   </action>
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="meta alt G" />
+    <keyboard-shortcut first-keystroke="control H" />
   </action>
   <action id="FindNext">
     <keyboard-shortcut first-keystroke="meta K" />
@@ -527,8 +526,12 @@
   <action id="FullyExpandTreeNode">
     <keyboard-shortcut first-keystroke="MULTIPLY" />
   </action>
-  <action id="Generate">
-    <keyboard-shortcut first-keystroke="alt INSERT" />
+  <action id="Generate" />
+  <action id="Git.Pull">
+    <keyboard-shortcut first-keystroke="shift control F1" />
+  </action>
+  <action id="Git.Push">
+    <keyboard-shortcut first-keystroke="shift control F2" />
   </action>
   <action id="GotoAction">
     <keyboard-shortcut first-keystroke="shift meta A" />
@@ -593,17 +596,12 @@
   <action id="GotoSymbol">
     <keyboard-shortcut first-keystroke="shift meta alt N" />
   </action>
-  <action id="GotoTest">
-    <keyboard-shortcut first-keystroke="shift meta T" />
-  </action>
   <action id="GotoTypeDeclaration" />
   <action id="Graph.Faces.OpenSelectedPages">
     <keyboard-shortcut first-keystroke="F12" />
     <keyboard-shortcut first-keystroke="shift meta E" />
   </action>
-  <action id="GuiDesigner.CreateComponent">
-    <keyboard-shortcut first-keystroke="alt INSERT" />
-  </action>
+  <action id="GuiDesigner.CreateComponent" />
   <action id="GuiDesigner.CreateListener" />
   <action id="GuiDesigner.Duplicate" />
   <action id="GuiDesigner.EditComponent" />
@@ -611,6 +609,10 @@
   <action id="GuiDesigner.GoToListener">
     <keyboard-shortcut first-keystroke="meta T" />
     <keyboard-shortcut first-keystroke="meta alt B" />
+  </action>
+  <action id="GuiDesigner.QuickJavadoc">
+    <mouse-shortcut keystroke="alt button2" />
+    <keyboard-shortcut first-keystroke="shift meta SPACE" />
   </action>
   <action id="HideActiveWindow">
     <keyboard-shortcut first-keystroke="shift ESCAPE" />
@@ -693,12 +695,8 @@
   <action id="MoveStatementUp">
     <keyboard-shortcut first-keystroke="alt UP" />
   </action>
-  <action id="NewElement">
-    <keyboard-shortcut first-keystroke="alt INSERT" />
-  </action>
-  <action id="NewElementSamePlace">
-    <keyboard-shortcut first-keystroke="meta alt INSERT" />
-  </action>
+  <action id="NewElement" />
+  <action id="NewElementSamePlace" />
   <action id="NextDiff">
     <keyboard-shortcut first-keystroke="meta F7" />
   </action>
@@ -713,8 +711,8 @@
     <keyboard-shortcut first-keystroke="meta TAB" />
   </action>
   <action id="NextTab">
-    <keyboard-shortcut first-keystroke="meta F6" />
     <keyboard-shortcut first-keystroke="meta alt LEFT" />
+    <keyboard-shortcut first-keystroke="control CLOSE_BRACKET" />
   </action>
   <action id="NextTemplateVariable">
     <keyboard-shortcut first-keystroke="TAB" />
@@ -728,7 +726,6 @@
   <action id="ParameterInfo" />
   <action id="PasteMultiple">
     <keyboard-shortcut first-keystroke="shift meta V" />
-    <keyboard-shortcut first-keystroke="shift meta INSERT" />
   </action>
   <action id="PopupHector">
     <keyboard-shortcut first-keystroke="shift control alt H" />
@@ -747,8 +744,8 @@
   </action>
   <action id="PreviousOccurence" />
   <action id="PreviousTab">
-    <keyboard-shortcut first-keystroke="shift meta F6" />
     <keyboard-shortcut first-keystroke="meta alt RIGHT" />
+    <keyboard-shortcut first-keystroke="control OPEN_BRACKET" />
   </action>
   <action id="PreviousTemplateVariable">
     <keyboard-shortcut first-keystroke="shift TAB" />
@@ -772,7 +769,6 @@
   <action id="QuickJavaDoc">
     <mouse-shortcut keystroke="alt button2" />
     <keyboard-shortcut first-keystroke="shift meta SPACE" />
-    <keyboard-shortcut first-keystroke="F2" />
   </action>
   <action id="RecentChangedFiles">
     <keyboard-shortcut first-keystroke="shift meta E" />
@@ -780,6 +776,7 @@
   <action id="RecentChanges" />
   <action id="RecentFiles">
     <keyboard-shortcut first-keystroke="meta E" />
+    <keyboard-shortcut first-keystroke="meta F6" />
   </action>
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="meta alt L" />
@@ -790,7 +787,7 @@
     <keyboard-shortcut first-keystroke="meta DELETE" />
   </action>
   <action id="RenameElement">
-    <keyboard-shortcut first-keystroke="shift alt R" />
+    <keyboard-shortcut first-keystroke="F2" />
   </action>
   <action id="Replace">
     <keyboard-shortcut first-keystroke="meta F" />
@@ -987,9 +984,10 @@
   <action id="Unwrap">
     <keyboard-shortcut first-keystroke="alt R" />
   </action>
-  <action id="UsageView.Include">
-    <keyboard-shortcut first-keystroke="INSERT" />
+  <action id="UpdateFiles">
+    <keyboard-shortcut first-keystroke="shift control 1" />
   </action>
+  <action id="UsageView.Include" />
   <action id="ValidateXml" />
   <action id="Vcs.QuickListPopupAction">
     <keyboard-shortcut first-keystroke="alt BACK_QUOTE" />
