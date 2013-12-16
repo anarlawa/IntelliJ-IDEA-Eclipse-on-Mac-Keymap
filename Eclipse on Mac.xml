@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<keymap version="1" name="Eclipse on Mac" parent="Eclipse">
+<keymap version="1" name="Atish Keymap" parent="Eclipse">
   <action id="$Copy">
     <keyboard-shortcut first-keystroke="meta C" />
   </action>
@@ -137,15 +137,11 @@
     <keyboard-shortcut first-keystroke="meta SLASH" />
     <keyboard-shortcut first-keystroke="meta DIVIDE" />
   </action>
-  <action id="CompareDirs">
-    <keyboard-shortcut first-keystroke="meta D" />
-  </action>
   <action id="Compile">
     <keyboard-shortcut first-keystroke="shift meta F9" />
   </action>
   <action id="CompileDirty">
-    <keyboard-shortcut first-keystroke="meta F9" />
-    <keyboard-shortcut first-keystroke="meta B" />
+    <keyboard-shortcut first-keystroke="control S" />
   </action>
   <action id="Console.Execute">
     <keyboard-shortcut first-keystroke="ENTER" />
@@ -221,7 +217,9 @@
     <keyboard-shortcut first-keystroke="shift alt D" />
     <keyboard-shortcut first-keystroke="shift F9" />
   </action>
-  <action id="DebugClass" />
+  <action id="DebugClass">
+    <keyboard-shortcut first-keystroke="meta B" />
+  </action>
   <action id="Debugger.EditTypeSource">
     <keyboard-shortcut first-keystroke="shift F4" />
   </action>
@@ -279,9 +277,7 @@
   <action id="EditorContextInfo">
     <keyboard-shortcut first-keystroke="alt Q" />
   </action>
-  <action id="EditorDeleteLine">
-    <keyboard-shortcut first-keystroke="meta D" />
-  </action>
+  <action id="EditorDeleteLine" />
   <action id="EditorDeleteToLineEnd">
     <keyboard-shortcut first-keystroke="shift meta DELETE" />
   </action>
@@ -526,7 +522,9 @@
   <action id="FullyExpandTreeNode">
     <keyboard-shortcut first-keystroke="MULTIPLY" />
   </action>
-  <action id="Generate" />
+  <action id="Generate">
+    <keyboard-shortcut first-keystroke="control G" />
+  </action>
   <action id="Git.Pull">
     <keyboard-shortcut first-keystroke="shift control F1" />
   </action>
@@ -823,7 +821,8 @@
     <keyboard-shortcut first-keystroke="shift meta alt F9" />
   </action>
   <action id="RunClass">
-    <keyboard-shortcut first-keystroke="shift meta F10" />
+    <keyboard-shortcut first-keystroke="control R" />
+    <keyboard-shortcut first-keystroke="meta R" />
   </action>
   <action id="RunGc" />
   <action id="RunInspection">
@@ -901,9 +900,7 @@
     <keyboard-shortcut first-keystroke="meta F2" />
   </action>
   <action id="StructuralSearchPlugin.StructuralReplaceAction" />
-  <action id="StructuralSearchPlugin.StructuralSearchAction">
-    <keyboard-shortcut first-keystroke="shift meta S" />
-  </action>
+  <action id="StructuralSearchPlugin.StructuralSearchAction" />
   <action id="SurroundWith">
     <keyboard-shortcut first-keystroke="shift alt Z" />
     <keyboard-shortcut first-keystroke="meta alt T" />
@@ -1012,4 +1009,3 @@
     <keyboard-shortcut first-keystroke="meta ENTER" />
   </action>
 </keymap>
-
