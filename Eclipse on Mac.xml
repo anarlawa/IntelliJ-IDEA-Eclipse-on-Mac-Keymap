@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<keymap version="1" name="Atish Keymap" parent="Eclipse">
+<keymap version="1" name="Intellij Keymap on Mac with Eclipse" parent="Eclipse">
   <action id="$Copy">
     <keyboard-shortcut first-keystroke="meta C" />
   </action>
